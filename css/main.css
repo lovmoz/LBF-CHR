@@ -1,19 +1,56 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  font-size: 14px;
+  font-size: 1rem; /* Utilisation de rem pour la taille de la police */
+  margin: 0;
+  padding: 0;
 }
+
 .v1_2 {
-  width: 96%;
-  height: 1717px;
+  width: 100%;
+  height: auto; /* Ajuste automatiquement la hauteur en fonction du contenu */
   background: url("../images/v1_2.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   opacity: 1;
   position: relative;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   overflow: hidden;
+  padding-top: 56.25%; /* Maintient le ratio d'aspect 16:9 */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .v1_2 {
+    width: 90%;
+  }
+
+  body {
+    font-size: 0.9rem; /* Ajuste la taille de la police pour les écrans plus petits */
+  }
+}
+
+@media (max-width: 768px) {
+  .v1_2 {
+    width: 100%;
+  }
+
+  body {
+    font-size: 0.8rem; /* Ajuste la taille de la police pour les écrans encore plus petits */
+  }
+}
+
+@media (max-width: 480px) {
+  .v1_2 {
+    width: 100%;
+    padding-top: 75%; /* Change le ratio d'aspect pour les mobiles */
+  }
+
+  body {
+    font-size: 0.7rem; /* Ajuste la taille de la police pour les petits écrans mobiles */
+  }
 }
