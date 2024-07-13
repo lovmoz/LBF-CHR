@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: auto; /* Ajuste automatiquement la hauteur en fonction du contenu */
   background: url("../images/v1_2.png") no-repeat center center;
-  background-size: contain; /* Ajuste l'image de fond pour qu'elle soit entièrement visible */
+  background-size: auto; /* Ajuste l'image de fond pour qu'elle soit entièrement visible */
   opacity: 1;
   position: relative;
   top: 0;
